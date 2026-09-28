@@ -1,23 +1,60 @@
 aid: bitgravity
+
 name: BitGravity
-description: 'BitGravity is a company surfaced via the API Evangelist harvest backlog (source: secondary-market)
-  and added to the network as a stub for full-pipeline profiling.'
+
+description: 'BitGravity provides a high‑speed content delivery network that supplies on‑demand high‑definition video and live streaming, accelerates websites, and enables reliable 24/7 high‑definition broadcasts. The company, founded in 2006 and headquartered in Burlingame, CA, serves customers needing cloud‑based networking infrastructure for video and web performance.'
+
 url: https://raw.githubusercontent.com/api-evangelist/bitgravity/refs/heads/main/apis.yml
+
 x-type: company
+
 x-source: harvest:secondary-market
-x-tier: stub
-x-tier-reason: harvest
+
+x-tier: profiled
+x-tier-reason: enrichment pass 2026-09-28 (modular-v1; was harvest)
+
 specificationVersion: '0.20'
+
 created: '2026-09-28'
+
 modified: '2026-09-28'
+
+x-coverage:
+  state: unreadable
+  reason: js-rendered-docs
+  detail: The Bitgravity website is a simple builder page with no machine‑readable API documentation.
+  evidence:
+    - url: https://bitgravity.ai/
+      status: 200
+  checked: '2026-09-28'
+
 tags:
-- Company
-apis: []
+- Content Delivery Network
+- Enterprise Software
+- Cloud Networking
+- Video Streaming
+- Live Streaming
+
 maintainers:
 - FN: Kin Lane
   email: kin@apievangelist.com
 - FN: APIs.json
   email: info@apis.io
+
 common:
+- type: Hosts
+  url: hosts/bitgravity-hosts.yml
+- type: Vendors
+  url: vendors/bitgravity-vendors.yml
+- type: DomainSecurity
+  url: security/bitgravity-domain-security.yml
 - type: Website
   url: https://forgeglobal.com/bitgravity_stock/
+
+apis: []
+x-enrichment:
+  date: '2026-09-28'
+  status: enriched
+  artifacts_added: 4
+  pass: modular-v1
+  engine: identity=local,contract=local,surfaces=local,docs=local,regulatory=local
