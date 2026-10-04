@@ -29,6 +29,12 @@ x-coverage:
   checked: '2026-09-28'
 
 tags:
+- CDN
+- Enterprise Software
+- Cloud Networking
+- Video Streaming
+- Live Streaming
+tags_raw:
 - Content Delivery Network
 - Enterprise Software
 - Cloud Networking
